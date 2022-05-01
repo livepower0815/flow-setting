@@ -1,0 +1,129 @@
+.company {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 8px 8px 8px 8px;
+  display: flex;
+  &-aside {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .controll {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 4px;
+      .title {
+        font-weight: 500;
+        margin: 0;
+        margin-right: 8px;
+      }
+    }
+  }
+  &-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    .title-box {
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      flex: 1;
+      margin-right: 4px;
+    }
+    .op-box {
+      flex-shrink: 0;
+      &-title {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 12px 8px;
+      }
+    }
+    p {
+      margin: 0;
+      margin-right: 4px;
+    }
+    .el-icon {
+      &-remove {
+        font-size: 16px;
+        color: $Danger;
+        &:hover {
+          color: $Danger-hover;
+        }
+      }
+      &-edit {
+        font-size: 16px;
+        color: $Primary;
+        &:hover {
+          color: $Primary-hover
+        }
+      }
+      &-delete {
+        font-size: 16px;
+        color: $Warning;
+        &:hover {
+          color: $Warning-hover;
+        }
+      }
+    }
+  }
+  & >>> {
+    .el-button {
+      margin: 2px;
+    }
+    .el-button+.el-button {
+      margin: 2px;
+    }
+    .el-tabs {
+      flex: 1;
+      border: 1px solid $Intermediate;
+      &__header {
+        margin-right: 0;
+      }
+      &__content {
+        height: 100%;
+        .el-tab-pane {
+          height: 100%;
+        }
+      }
+      &__item {
+        padding: 0 8px;
+      }
+    }
+  }
+  .password-wrap {
+    display: flex;
+    align-items: center;
+  }
+  .show-pwd {
+    border: 1px solid $Intermediate;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .on-line {
+    display: inline-block;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $Success;
+  }
+  .off-line {
+    display: inline-block;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    // background-color: $Intermediate-active;
+    border: 1px solid #808080;
+  }
+}

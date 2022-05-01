@@ -1,0 +1,121 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+#app {
+  .el-dialog__wrapper {
+    .el-dialog {
+      display: flex;
+      flex-direction: column;
+      max-height: 70vh;
+      overflow: hidden;
+      &__header {
+        padding: 12px;
+        border-bottom: 1px solid $Intermediate;
+        flex-shrink: 0;
+      }
+      &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 0;
+        overflow: hidden;
+        @include scrollBar
+      }
+      &__footer {
+        flex-shrink: 0;
+        border-top: 1px solid $Intermediate;
+        padding: 12px;
+      }
+    }
+  }
+
+}
+
+.app-wrapper {
+  .el-button {
+    // border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+.el-message-box__wrapper {
+  .el-message-box {
+    min-width: 220px;
+    max-width: 420px;
+    width: auto;
+    padding: 0;
+    &__header {
+      padding: 12px;
+    }
+    &__content {
+      padding: 12px;
+    }
+    &__btns {
+      padding: 12px;
+      .el-button--small{
+        padding: 7px 15px;
+      }
+    }
+  }
+}
+.is-fullscreen {
+  .el-loading-spinner{
+    .el-icon-loading{
+      font-size: 32px;
+    }
+  }
+}
+
+.el-popconfirm__main {
+  justify-content: center;
+}
+
+// for cell line break
+.white-space-pre {
+  div.cell {
+    white-space: pre-line;
+  }
+}

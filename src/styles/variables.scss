@@ -1,0 +1,65 @@
+$Primary:  #263445;
+$Primary-hover: #304156;
+$Primary-active: #1f2d3d;
+// $Primary: #1991eb;
+// $Primary-hover: #5eb2f1;
+// $Primary-active: #1165a4;
+
+$Primary-light10: #e8f4fd;
+$Success: #71d900;
+$Success-hover: #9be44d;
+$Success-active: #4e9700;
+$Success-light10: #f0fbe5;
+$Warning: #ffa600;
+$Warning-hover: #ffc04d;
+$Warning-active: #b27300;
+$Warning-light10: #fff6e5;
+$Danger: #ff3535;
+$Danger-hover: #ff7171;
+$Danger-active: #b22424;
+$Danger-light10: #fff0f0;
+$Intermediate: #c9d1da;
+$Intermediate-hover: #d9dee5;
+$Intermediate-active: #8c9198;
+$Intermediate-light10: #e5e5e5;
+$black: #333;
+$white: #ffffff;
+$Light-80: #f4f5f7;
+$Light-60: #e9ecf0;
+$Light-40: #dee3e8;
+$Black-40: #aeb1b4;
+$Black-60: #7e7e7f;
+
+// NavBar
+$navBarBg: #19232E;
+$logoColor: $white;
+// sidebar
+$menuText: $black;
+$menuActiveText: $Primary;
+$subMenuActiveText:$black; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:$white;
+$menuHover: $Light-80;
+
+$subMenuBg: $white;
+$subMenuHover: $Light-80;
+
+$sideBarWidth: 186px;
+
+// Chatroom
+$ChatPoolBg: #e1e5ea;
+$ChatBorderColor: #c9d1da;
+$ChatMsgPlaceholder: #a3aab8;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

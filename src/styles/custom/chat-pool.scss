@@ -1,0 +1,96 @@
+.chat-pool {
+  position: relative;
+  border-top: 1px solid $ChatBorderColor;
+  background-color: $ChatPoolBg;
+  padding: 0;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  @include scrollBar;
+  &__layout {
+    // height: 100%;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    padding: 8px 8px 8px 8px;
+    transition: padding-bottom 300ms ease-out;
+  }
+  &__row {
+    position: relative;
+     margin-top: 12px;
+  }
+  &__timebar {
+    position: absolute;
+    z-index: 200;
+    top: -12px;
+    width: 100%;
+    color: #8093a8;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    span {
+      position: relative;
+      z-index: 3;
+      background-color: #e1e5ea;
+      padding: 0 4px;
+      font-weight: bold;
+    }
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      content: '';
+      border-bottom: 1px solid #c9d1da;
+    }
+  }
+  &__system {
+    position: relative;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    span {
+      padding: 4px 8px;
+      border-radius: 8px;
+      background-color: #8093a8;
+      color: #fff;
+      overflow: hidden;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+  &__end {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    color: #8093a8;
+    margin: 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 12px;
+    span {
+      position: relative;
+      z-index: 3;
+      background-color: #e1e5ea;
+      padding: 0 4px;
+      font-weight: bold;
+    }
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      left: 8px;
+      right: 8px;
+      content: '';
+      border-bottom: 1px solid #c9d1da;
+    }
+  }
+}
